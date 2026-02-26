@@ -1,24 +1,26 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
-    --bg: #0b0f14;
-    --card: #0f1720;
-    --text: #e6eef8;
-    --muted: #b29a9b;
-    --accent: #4fd1c5;
+:root {
+    /* autumnal brown and gold palette inspired by the cover image */
+    --bg: #2B1B0E;       /* deep chocolate brown */
+    --card: #4C3724;     /* warm medium brown for containers */
+    --text: #F5E1C2;     /* creamy off-white for readability */
+    --muted: #A78A63;    /* desaturated tan for secondary text */
+    --accent: #D4AF37;   /* metallic gold accent color */
 }
 
-[data-theme="light"]{
-    --bg: #ffffff;
-    --card: #f7f9fb;
-    --text: #0b1620;
-    --muted: #4b5563;
-    --accent: #00796b;
+[data-theme="light"] {
+    /* lighter beige variation for day theme */
+    --bg: #F2E9E4;       /* pale ivory background */
+    --card: #E0D6D1;     /* soft taupe cards */
+    --text: #2B1B0E;     /* dark brown text for contrast */
+    --muted: #8F7B6E;    /* muted brown-gray */
+    --accent: #C99C5A;   /* softer gold accent */
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     background: var(--bg);
@@ -28,20 +30,21 @@ body{
     transition: background-color 240ms ease, color 240ms ease;
 }
 
-header{
+header {
     padding: 20px;
     text-align: left;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    /* subtle golden glow at top fading into background */
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.1), transparent);
     position: relative;
 }
 
-h1{
-    margin: 30px;
+h1 {
+    margin: 10px;
     color: var(--text);
     font-size: 2rem;
-}
+  }
 
-#capa{
+#capa {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -50,12 +53,12 @@ h1{
     filter: brightness(0.95);
 }
 
-#theme-toggle{
+#theme-toggle {
     position: absolute;
     right: 16px;
     top: 16px;
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid var(--accent);
     color: var(--text);
     padding: 8px 10px;
     border-radius: 8px;
@@ -64,50 +67,52 @@ h1{
     backdrop-filter: blur(4px);
 }
 
-#theme-toggle:hover{
+#theme-toggle:hover {
     transform: translateY(-1px);
 }
 
-.principal{
+.principal {
     position: relative;
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
-    strong{
+
+    strong {
         color: var(--accent);
     }
 }
 
-.principal h2{
+.principal h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
     color: var(--text);
 }
 
-.principal p{
+.principal p {
     margin-bottom: 20px;
     font-size: 18px;
     color: var(--text);
 }
 
-.principal ul{
+.principal ul {
     margin-left: 20px;
     margin-bottom: 20px;
     color: var(--text);
 }
 
-.principal li{
+.principal li {
     margin-bottom: 10px;
 }
 
-.Benefícios, .beneficios{
+.Benefícios,
+.beneficios {
     padding: 20px;
     max-width: 900px;
     margin: 20px auto;
 }
 
-#beneficios{
+#beneficios {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -116,7 +121,16 @@ h1{
     filter: brightness(0.95);
 }
 
-a{
+img#capa{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    filter: brightness(0.95);
+}
+
+a {
     text-decoration: none;
     color: var(--accent);
 }
