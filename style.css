@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #0b0f14;
+    --card: #0f1720;
+    --text: #e6eef8;
+    --muted: #b29a9b;
+    --accent: #4fd1c5;
+}
+
+[data-theme="light"]{
+    --bg: #ffffff;
+    --card: #f7f9fb;
+    --text: #0b1620;
+    --muted: #4b5563;
+    --accent: #00796b;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    transition: background-color 240ms ease, color 240ms ease;
+}
+
+header{
+    padding: 20px;
+    text-align: left;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    position: relative;
+}
+
+h1{
+    margin: 30px;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+#capa{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    filter: brightness(0.95);
+}
+
+#theme-toggle{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: var(--text);
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    backdrop-filter: blur(4px);
+}
+
+#theme-toggle:hover{
+    transform: translateY(-1px);
+}
+
+.principal{
+    position: relative;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    strong{
+        color: var(--accent);
+    }
+}
+
+.principal h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text);
+}
+
+.principal p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--text);
+}
+
+.principal ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.principal li{
+    margin-bottom: 10px;
+}
+
+.Benefícios, .beneficios{
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#beneficios{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-top: 10px;
+    filter: brightness(0.95);
+}
+
+a{
+    text-decoration: none;
+    color: var(--accent);
+}
