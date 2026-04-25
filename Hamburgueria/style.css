@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f1e9;
+    color: #333333;
+}
+
+header {
+    background-color: #c8102e;
+    color: #f8f8f8;
+    padding: 0.3rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a {
+    color: #F8F8FF;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: darkorange;
+    font-size: 17px;
+}
+
+main h2 {
+    font-size: 30px;
+    color: #FF4500;
+    text-align: center;
+}
+
+footer {
+    background-color: #333333;
+    color: #F8F8F8;
+    font-size: 21px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: #F5F5F5;
+    border-radius: 20px;
+    height: 80vh;
+    padding: 15px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card button {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.card button:hover{
+    font-size: 1.3rem;
+    transform: scale(1.10);
+}
+
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descricao {
+    color: #333333;
+}
+
+.preco {
+    font-size: 36px;
+    font-weight: bold;
+    color: #DC143C;
+}
+
+main section {
+    display: none;
+}
+
+main section.visivel {
+    display: block;
+}

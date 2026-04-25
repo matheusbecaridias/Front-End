@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍔Hamburgueria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <h1>🍔Hamburgueria </h1>
+    </div>
+
+    <nav>
+      <a href="#" onclick="mostrarSecao('hamburgueres', this)">Hambúrgueres</a>
+      <a href="#" onclick="mostrarSecao('bebidas', this)">Bebidas</a>
+      <a href="#" onclick="mostrarSecao('sobremesas', this)">Sobremesas</a>
+    </nav>
+
+  </header>
+  <main>
+
+    <section id="hamburgueres">
+      <h2>Nossos Hamburgueres</h2>
+      <div class="container"></div>
+
+      <div class="item-container">
+        <img src="./img/Cheeseburger.png" alt="Cheeseburger">
+        <input type="number" min="0" value="0" class="quantity" data-name="Cheeseburger" data-price="25,90">
+      </div>
+
+      <div class="item-container">
+        <img src="./img/bacon.png" alt="x-bacon">
+        <input type="number" min="0" value="0" class="quantity" data-name="x-bacon" data-price="28,90">
+      </div>
+
+      <div class="item-container">
+        <img src="./img/x-salada.png" alt="x-salada">
+        <input type="number" min="0" value="0" class="quantity" data-name="x-saladadata-price="22,90">
+      </div>
+
+
+      <div class="grid-produtos"></div>
+    </section>
+
+    <section id="bebidas">
+      <h2>Nossas Bebidas</h2>
+      <div class="grid-produtos"></div>
+    </section>
+
+    <section id="sobremesas">
+      <h2>Nossas Sobremesas</h2>
+      <div class="grid-produtos"></div>
+    </section>
+
+  </main>
+  <footer>
+    <p>Feito com ❤️ por Donizete de Gouvea</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
